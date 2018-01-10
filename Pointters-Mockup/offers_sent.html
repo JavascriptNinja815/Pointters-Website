@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom offers</title>
+    
+    <link rel="stylesheet" href="libraries/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libraries/font_helvetica_neue/HelveticaNeue.ttf">
+    <link rel="stylesheet" href="libraries/jquery-labelauty-master/source/jquery-labelauty.css">
+    <link rel="stylesheet" href="css/general-classes.css">
+    <link rel="stylesheet" href="css/general-margin-padding.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <style>
+    
+        #modal_sendOfferToRequest input.labelauty + label
+        {
+            float: left !important;
+            border: 2px solid #aaa !important;
+            padding:6px !important;
+        }
+        
+        #modal_sendOfferToRequest input.labelauty + label > span.labelauty-unchecked-image,
+        #modal_sendOfferToRequest input.labelauty + label > span.labelauty-checked-image
+        {
+            top:-1px;
+            left:0px;
+            background-size:contain !important;
+        }
+        
+        #modal_sendOfferToRequest input.labelauty:checked + label
+        {
+             border: 2px solid transparent !important;
+        }
+        
+        #modal_sendOfferToRequest input.labelauty + label > span.labelauty-unchecked-image
+        {
+            background-image: none !important;
+        }
+    
+    </style>
+    
+</head>
+<body>
+
+   
+<!------------------------------------------------ offer sent -------------------------------------------------------------->  
+
+   
+<div id="modal_sendOfferToRequest" class="modal fade margin-top-20" role="dialog" style="border-radius:10px;">
+  <div class="modal-dialog" style="border-radius:10px;">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center padding-0 width-600-px margin-left-right-auto color-bg-white border-none">
+     
+     <div class="col-xs-12 col-md-12 padding-0 color-bg-white" style="border-radius:10px; overflow:hidden;">
+        <div class="col-xs-12 col-md-12 bg-F0F0F3" style="border-bottom:1px solid #e4e4e4;">
+             <h3 class="text-left color-text-black font-em-11 margin-bottom-15 font-weight-600 margin-left-10 display-inlineBlock pull-left">Send Offer to Request</h3> 
+             <span class="pull-right margin-top-15 margin-right-10 cursor-pointer" data-toggle="modal" data-target="#modal_sendOfferToRequest">
+                 <img src="images/icons/icon_close2.png" alt="">
+             </span>
+        </div>   
+        
+                 
+                 
+         <div class="col-xs-12 col-md-12 padding-top-10 padding-bottom-10 color-bg-white text-left">
+            <p class="color-gray margin-bottom-0 padding-left-15">Live Request</p>
+         </div> 
+          
+         <div class="col-xs-12 col-md-12">
+             <div class="col-xs-12 col-md-12 padding-0">
+                <div class="col-md-12 col-xs-12 text-left dispaly-inleBlock">
+                  
+                   <div class="col-xs-12 col-md-12 padding-left-0 padding-top-15" style="border-top:1px solid #e4e4e4;">
+                       
+                        <p style="position:absolute; top:12px; right:0px;">
+                            <i class="fa fa-clock-o color-mediumgray margin-right-3"></i>
+                            <span class="font-px-12 color-darkgray">11/18 8:00AM - 10:00PM</span>
+                        </p>
+                       
+                        <img src="images/chat.png" class="display-inlineBlock width-60-px height-60-px" style="border-radius:2px; vertical-align:top;" alt="">
+                        <div class="display-inlineBlock margin-left-10" style="margin-top: -5px;">
+                           
+                            <p class="display-inlineBlock color-darkgray font-weight-300 font-px-14 margin-bottom-0 text-left">Dog Walking Service</p>
+                            
+                            <p class="color-gray font-weight-300 font-px-10 margin-0 font-px-12 margin-bottom-0 text-left margin-top-3">
+                                <i class="fa fa-map-marker color-gray margin-right-2"></i>San Jose, CA, 22km
+                            </p>
+                            
+                            <p class="color-gray font-weight-300 font-px-10 margin-0 font-px-12 margin-bottom-5 text-left margin-top-3">$10 for 1 hour</p>
+                           
+                            <div>
+                                <p class="color-gray display-inlineBlock font-px-14">
+                                  <img src="images/p.png" alt=""> 234 
+                                </p>
+
+                                <p class="color-gray display-inlineBlock text-center font-px-14 margin-left-15 margin-right-15">
+                                  <img src="images/icons/brief.png" width="16px" height="16px" alt=""> 23
+<!--                                  <i class="fa fa-briefcase color-mediumgray"></i>  -->
+                                </p>
+
+                                <p class="color-gray display-inlineBlock pull-right margin-right-5 font-px-14">
+                                  <i class="fa fa-star color-mediumgray"></i> 96% 
+                                </p>
+                            </div>
+                           
+                        </div>
+                    </div>                  
+                    
+                    <div class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4;">
+                        <div class="col-xs-3 col-md-3 padding-0 padding-top-15">
+                            <p class="color-gray">Offer Detail:</p>
+                        </div>              
+                        <div class="col-xs-9 col-md-9 padding-0">
+                            <input type="text" class="form-control color-darkgray height-50-px border-none boxshadow-none" value="$60.00">
+                        </div>              
+                    </div> 
+                     
+                     <div class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4;">
+                        <div class="col-xs-3 col-md-3 padding-0 padding-top-15">
+                            <p class="color-gray">Price:</p>
+                        </div>              
+                        <div class="col-xs-9 col-md-9 padding-0">
+                            <input type="text" class="form-control color-darkgray height-50-px border-none boxshadow-none" value="$60.00">
+                        </div>              
+                    </div>      
+                      
+                    <div class="col-xs-12 col-md-12 padding-0">
+                        <textarea name="" id="" cols="30" rows="3" class="color-text-black form-control border-none boxshadow-none padding-0 padding-top-10" placeholder="Write your description">Write your description</textarea>
+                    </div> 
+                     
+                    <div class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4;">
+                        <div class="col-xs-12 col-md-7 padding-0 padding-top-8 padding-bottom-8">
+                            <div class="col-xs-3 col-md-2 padding-0 padding-top-8">
+                                 <p class="color-gray">Time:</p>
+                            </div>
+                            <div class="col-xs-3 col-md-3 padding-0 margin-top-2" style="border-right:1px solid #e4e4e4;">
+                                <input type="text" class="form-control color-text-black border-none boxshadow-none" value="3 Weeks">
+                            </div>
+                            <div class="col-xs-3 col-md-3 padding-0 margin-top-2" style="border-right:1px solid #e4e4e4;">
+                                <input type="text" class="form-control color-text-black border-none boxshadow-none" value="0 Days">
+                            </div>
+                            <div class="col-xs-3 col-md-3 padding-0 margin-top-2">
+                               <input type="text" class="form-control color-text-black border-none boxshadow-none" value="0 Hours"> 
+                            </div>
+                        </div>
+                                                  
+                    </div>              
+                      
+                    
+                    
+                    <div class="col-xs-12 col-md-12 padding-0">
+                        <div class="col-xs-12 col-md-12 padding-0 padding-top-10">
+                            <p class="color-gray">Delivery Method:</p>
+                        </div> 
+                                         
+                         <div class="col-xs-12 col-md-12 padding-0 padding-top-10">
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                <p class="color-gray margin-0">Online</p>
+                            </div>
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                 <input type="checkbox" checked class="form-control color-text-white bg-blue display-inlineBlock pull-left" style="width:14px; height:14px; vertical-align:middle;">
+                            </div>
+                        </div> 
+                                         
+                        <div class="col-xs-12 col-md-12 padding-0 padding-top-10">
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                <p class="color-gray margin-0">Shipment</p>
+                            </div>
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                 <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock" style="width:14px; height:14px; vertical-align:middle;">
+                            </div>
+                        </div> 
+                                         
+                        <div class="col-xs-12 col-md-12 padding-0 padding-top-10">
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                <p class="color-gray margin-0">Local-at you store locations</p>
+                            </div>
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                 <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock" style="width:14px; height:14px; vertical-align:middle;">
+                            </div>
+                        </div>   
+                                         
+                        <div class="col-xs-12 col-md-12 padding-0 padding-top-10">
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                <p class="color-gray margin-0">Local-anywhere in the city you service</p>
+                            </div>
+                            <div class="col-xs-6 col-md-6 padding-0">
+                                 <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock" style="width:14px; height:14px; vertical-align:middle;">
+                            </div>
+                        </div>   
+                                         
+                        <div class="col-xs-12 col-md-12 padding-0 padding-top-10">
+                              <div class="display-inlineBlock" style="position:relative;">
+                                   <input type="number" min="15" max="9999" value="1500" style="border-radius:15px; border: 1px solid #ddd; height: 30px; width: 120px; padding-right: 10px;" class="boxshadow-none color-text-black font-weight-600 display-inlineBlock margin-right-10 padding-left-10 font-em-11">
+                                   <p class="color-text-black font-weight-600 display-inlineBlock" style="position:absolute; left:50px; top:5px;">Miles</p>
+                               </div>
+                        </div>              
+                                          
+                    </div>
+                    
+                </div>
+            </div>
+         </div>               
+                                       
+                 
+            <div class="col-xs-12 col-md-12 padding-20 padding-left-40 padding-right-40 bg-F0F0F3 margin-top-25">
+                             
+                <li class="pull-right">
+                    <a class="text-uppercase margin-top-40 bg-blue color-text-white font-px-14 font-weight-600 padding-6 padding-left-30 padding-right-30" style="border-radius:15px;">Send</a>
+                </li>
+                
+                <li class="pull-right">
+                    <a class="text-uppercase margin-top-40 color-text-black font-px-14 font-weight-600 padding-6 padding-left-30 padding-right-30">Cancel</a>
+                </li>
+                
+            </div> 
+                                         
+     </div>
+  
+    </div>
+    
+
+  </div>
+</div>      
+                  
+                        
+<!------------------------------------------------ top_menu ---------------------------------------------------------------------->
+  
+   
+ <div id="modal_signin" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center padding-0 width-500-px margin-left-right-auto color-bg-white">
+    
+     <div class="col-xs-12 col-md-12 padding-50 padding-bottom-30 color-bg-white">
+     
+         <a href="index.html"><img src="images/logo.png" class="margin-bottom-40" alt=""></a>
+
+         <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-400-px" style="border:1px solid #e9e9e9;" placeholder="Email">
+
+         <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-400-px" style="border:1px solid #e9e9e9;" placeholder="Password">
+
+         <input onclick="topmenu_signedin();" type="submit" class="form-control bg-blue color-text-white font-weight-600 font-px-16 height-40-px padding-top-7 border-none width-400-px" value="Sign In">
+
+         <p class="margin-top-20 margin-bottom-20 font-weight-600">OR</p>
+
+         <a href="" class="padding-top-12 padding-bottom-12 color-text-white font-weight-600 font-px-15" style="padding-right:110px; padding-left:115px; position:relative; background-color: #475993; border-radius: 2px;">
+           <i class="fa fa-facebook-square color-text-white fa-2x" style="position:absolute; left: 15px; top:5px;"></i>
+           <p class="display-inlineBlock">Continue with Facebook</p>
+         </a>
+
+         <br>  
+         <br>  
+         
+        <a href="" class="padding-top-12 padding-bottom-12 color-text-white font-weight-600 font-px-15" style="padding-right:110px; padding-left:135px; position:relative; border:1px solid #e4e4e4; border-radius: 2px;">
+           <img src="images/icons/google1.png" style="width:24px; height:24px; position:absolute; left: 15px; top:8px;" alt="">
+           <p class="display-inlineBlock color-text-black">Continue with Google</p>
+         </a>
+
+         <p style="cursor:pointer;" data-toggle="modal" data-target="#modal_forgotpassword" data-dismiss="modal" class="padding-top-30">Forgot your Password?</p>
+     
+     </div>
+     
+     
+     <div class="col-xs-12 col-md-12 padding-0 color-bg-white padding-top-15 padding-bottom-15" style="border-top: 1px solid #e9e9e9;">
+       
+       <p style="cursor:pointer;" data-toggle="modal" data-target="#modal_signup" data-dismiss="modal" class="color-gray margin-top-5">Not a member yet? <span class="color-blue cursor-pointer">Sign up</span></p>
+       
+     </div>
+  
+    </div>
+    
+
+  </div>
+</div>  
+
+
+  
+<!------------------------------------------------- modal addService -------------------------------------------------------------------->
+  
+   
+ <div id="modal_addService" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center padding-0 width-550-px margin-left-right-auto color-bg-white" style="border-radius:3px; border:none;">
+    
+     <div class="col-xs-12 col-md-12 padding-20" style="background-color: #F0F0F3; border-top-left-radius: 3px;border-top-right-radius: 3px;">
+     
+       <p class="text-uppercase text-left margin-0 font-weight-600 font-em-11">Add service</p>
+     
+     </div>
+     
+     
+     <div class="col-xs-12 col-md-12 padding-0 color-bg-white div-white-box-shadow-4">
+     
+        
+         <div class="col-xs-12 col-md-12 padding-20 padding-bottom-10">
+           
+           <textarea class="color-gray width-90-p border-none font-em-12 padding-0" rows="2" type="text" placeholder="Enter Service Description"> Enter Service Description </textarea>
+           
+           <img src="images/icons/Symbol1@2x.png" class="pull-right" width="32px" height="32px" alt="">
+           
+         </div>
+         
+         
+         <div class="col-xs-12 col-md-12 padding-20 padding-top-0" style="position:relative;">
+           
+           <span style="position:absolute; top:40%; left:20px; z-index:1;">
+               <img src="images/icons/slide_previous.png" alt="">
+           </span>
+           
+            <span style="position:absolute; top:40%; right:20px; z-index:1;">
+               <img src="images/icons/slide_next.png" alt="">
+           </span>
+           
+           <div class="col-md-4 col-xs-4 padding-15 color-bg-white" style="height:160px; display:flex;">
+             <div class="col-xs-12 col-md-12 padding-0" style="background-color:#F0F0F3; display:flex; justify-content:center; align-content:center; align-items:center;">
+                <img src="images/icons/path.png" alt="">
+                <img src="images/icons/icon_close.png" style="position:absolute; top:5px; right:5px; z-index:1;" alt="">
+             </div>
+           </div>
+           
+            <div class="col-md-4 col-xs-4 padding-15 color-bg-white" style="height:160px; display:flex;">
+             <div class="col-xs-12 col-md-12 padding-0" style="background-color:#F0F0F3; display:flex; justify-content:center; align-content:center; align-items:center;">
+                <img src="images/icons/path.png" alt="">
+                <img src="images/icons/icon_close.png" style="position:absolute; top:5px; right:5px; z-index:1;" alt="">
+             </div>
+           </div>
+           
+            <div class="col-md-4 col-xs-4 padding-15 color-bg-white" style="height:160px; display:flex;">
+             <div class="col-xs-12 col-md-12 padding-0" style="background-color:#F0F0F3; display:flex; justify-content:center; align-content:center; align-items:center;">
+                <img src="images/icons/path.png" alt="">
+                <img src="images/icons/icon_close.png" style="position:absolute; top:5px; right:5px; z-index:1;" alt="">
+             </div>
+           </div>
+           
+         </div>
+         
+         
+         <div class="col-xs-12 col-md-12 padding-20 padding-top-0">
+         
+          <select name="" id="" class="form-control color-darkgray boxshadow-none" style="border:1px solid #e4e4e4;">
+           
+            <option value="">Choose a Service Category</option>
+            
+            <option class="padding-top-15" value=""> Home </option>
+            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Kitchen Repair</option>
+            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Furniture</option>
+             
+            <option value="">Auto</option>
+            <option value="">&nbsp;&nbsp;&nbsp;&nbsp;Full Body</option>
+             
+          </select>
+          
+          <i class="fa fa-caret-down pull-right color-gray padding-4 padding-right-10 color-bg-white" style="position:absolute; right:24px; top: 4px; font-size: 18px;"></i>
+         
+         </div>
+         
+         
+         <div class="col-xs-12 col-md-12 padding-20 padding-top-0">
+         
+          <li class="dropdown" style="position:relative;">
+          
+           <a class="form-control-custom text-left dropdown-toggle padding-0 padding-top-5 padding-left-10" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="border-bottom-right-radius:0px; border-bottom-left-radius:0px; border:1px solid #e4e4e4;">Add Pricing</a>
+              
+           <img src="images/icons/group.png" alt="" class="pull-right" style="position:absolute; right:12px; top: 8px; ">         
+             
+           
+   
+<div id="addService_pricing" class="dropdown-menu div-white-box-shadow color-bg-white padding-0" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:100%;">
+
+   <div class="col-xs-12 col-md-12 padding-15">
+       
+       <div class="col-md-3 col-md-12 padding-left-0">
+
+         <p class="color-darkgray">Price</p>
+         <input type="text" class="form-control text-center font-weight-600 color-text-black" value="$60">
+      
+       </div>
+      
+       <div class="col-md-9 col-md-12 padding-0">
+
+         <p class="color-darkgray">Time to complete work</p>
+         
+       
+           <div id="custom_inputs" class="col-xs-12 col-md-12 padding-0">
+               
+               <div class="col-xs-4 col-md-4 padding-0 display-inlineBlock" style="position:relative;">
+           
+                   <input type="number" min="0" max="48" value="48" class="form-control" style="border-top-left-radius:3px; border-bottom-left-radius:3px;">
+
+                   <p class="p_absolute">Weeks</p>
+           
+               </div>
+
+               <div class="col-xs-4 col-md-4 padding-0 display-inlineBlock" style="position:relative;">
+
+                   <input type="number" min="0" max="365" value="365" class="form-control" style="border-left:0px;">
+
+                   <p class="p_absolute">Days</p>
+
+               </div>
+
+
+               <div class="col-xs-4 col-md-4 padding-0 display-inlineBlock" style="position:relative;">
+
+                   <input type="number" min="0" max="1000" value="1000" class="form-control" style="border-left:0px; border-bottom-right-radius:3px; border-top-right-radius:3px;">
+
+                   <p class="p_absolute">Hours</p>
+
+               </div>
+               
+           </div>
+           
+         
+       </div>
+   </div>
+   
+   
+    <div class="col-xs-12 col-md-12 padding-15">
+    
+         <p class="color-darkgray">Description</p>
+         <textarea rows="2" class="form-control color-gray padding-0 border-0 boxshadow-none">Write price description</textarea>
+    
+         <a id="li_addService" onclick="btn_menu_f(this)" class="text-uppercase margin-top-40 bg-blue color-text-white font-px-14 font-weight-600 padding-6 padding-left-20 padding-right-20 pull-right" style="border-radius:15px;">add price</a>
+        
+         <a id="li_cancel" onclick="btn_menu_f(this)" data-toggle="modal" data-target="#" class="pull-right margin-right-20 margin-top-45 font-px-14 font-weight-600 color-darkgray text-uppercase">cancel</a>
+       
+    </div>
+   
+
+</div>
+
+
+<!------------------------------------------------------------->
+
+   
+<div id="addService_pricing_done" class="div-white-box-shadow padding-10 hidden margin-bottom-10 boxshadow-none text-left" style="border:1px solid #e4e4e4; border-radius:5px; width:100%; background-color: #F0F0F3; border-top-right-radius: 0px; border-top-left-radius: 0px;">
+
+   <p class="display-inlineBlock color-gray margin-bottom-0 text-left">$10/hour for home service</p>
+   
+   <p id="li_editService" onclick="btn_menu_f(this)" class="text-uppercase font-em-08 padding-2 padding-left-6 padding-right-6 color-bg-white color-gray pull-right display-inlineBlock  margin-bottom-0">Edit</p>
+
+</div>
+
+          
+          </li>
+         
+         </div>
+         
+         
+         <div class="col-xs-12 col-md-12 padding-20 padding-top-0">
+          
+          <li class="dropdown" style="position:relative;">
+          
+              <a class="form-control-custom text-left dropdown-toggle padding-0 padding-top-5 padding-left-10 boxshadow-none" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="border:1px solid #e4e4e4;">Choose Delivery Method</a>
+              
+              <i class="fa fa-caret-down pull-right color-gray" style="position:absolute; right:16px; top: 8px; font-size: 18px;"></i>
+
+              
+<div id="addService_deliveryMethod" class="dropdown-menu div-white-box-shadow color-bg-white padding-0" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:100%;">
+
+   <ul class="padding-20 padding-top-15">
+       
+       <li>
+           <p class="display-inlineBlock margin-top-5 color-gray">Online</p>
+           <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock pull-right" style="width:14px; height:14px; vertical-align:middle;">
+       </li>
+       
+       <li>
+           <p class="display-inlineBlock margin-top-5 color-gray">Shipment</p>
+           <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock pull-right" style="width:14px; height:14px; vertical-align:middle;">
+       </li>
+       
+       <li>
+           <p class="display-inlineBlock margin-top-5 color-gray">Local-at your store locations</p>
+           <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock pull-right" style="width:14px; height:14px; vertical-align:middle;">
+       </li>
+       
+       <li>
+           <p class="display-inlineBlock margin-top-5 color-gray">Local-anywhere in the city you service</p>
+           <input type="checkbox" class="form-control color-text-white bg-blue display-inlineBlock pull-right" style="width:14px; height:14px; vertical-align:middle;">
+       </li>
+       
+       <li class="margin-top-4 margin-bottom-8">
+          
+           <div class="display-inlineBlock" style="position:relative;">
+           
+               <input type="number" min="15" max="9999" value="1500" style="border-radius:15px; border: 1px solid #ddd; height: 30px; width: 120px; padding-right: 10px;" class="boxshadow-none color-text-black font-weight-600 display-inlineBlock margin-right-10 padding-left-10 font-em-11">
+
+               <p class="color-text-black font-weight-600 display-inlineBlock" style="position:absolute; left:50px; top:5px;">miles</p>
+           
+           </div>
+           
+           <p class="color-gray display-inlineBlock">within your current location</p>
+           
+       </li>
+       
+       <li>
+       <p class="color-gray font-em-09">Your local service will not ne posted until you have passed background check</p>
+       </li>
+       
+   </ul>
+
+ </div>
+
+            
+          </li>
+         
+         </div>
+       
+     
+     </div>
+     
+     
+     <div class="col-xs-12 col-md-12 padding-15 padding-right-30" style="border-top: 1px solid #e9e9e9; background-color: #F0F0F3; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px;">
+       
+        <li id="li_addService" onclick="" class="display-inlineBlock pull-right">
+            <a class="text-uppercase margin-top-40 bg-blue color-text-white font-px-14 font-weight-600 padding-6 padding-left-20 padding-right-20" style="border-radius:15px;">Add Service</a>
+        </li>
+             
+        <li onclick="btn_menu_f(this);" id="li_cancel" class="display-inlineBlock pull-right margin-right-20">
+            <a class="margin-top-40 font-px-14 font-weight-600 color-darkgray text-uppercase">Cancel</a>
+        </li>
+       
+     </div>
+  
+    </div>
+    
+
+  </div>
+</div>  
+
+
+
+<!---------------------------------------------------- modal signup ------------------------------------------------------------------->
+  
+  
+   
+ <div id="modal_signup" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center padding-0 width-500-px margin-left-right-auto color-bg-white">
+    
+     <div class="col-xs-12 col-md-12 padding-50 padding-bottom-30 color-bg-white">
+     
+         <img src="images/logo.png" class="margin-bottom-40" alt="">
+
+        
+         <div id="div_signup_1" class="col-xs-12 col-md-12 padding-0 margin-bottom-30">
+          
+             <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-400-px" style="border:1px solid #e9e9e9;" placeholder="Email">
+
+             <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-400-px" style="border:1px solid #e9e9e9;" placeholder="Password">
+
+             <input onclick="continue_signup();" type="submit" class="form-control bg-blue color-text-white font-weight-600 font-px-16 height-40-px padding-top-7 border-none width-400-px" value="Continue">
+
+             <p class="margin-top-20 margin-bottom-20 font-weight-600">OR</p>
+
+             <a onclick="continue_signup();" href="" class="padding-top-12 padding-bottom-12 color-text-white font-weight-600 font-px-15" style="padding-right:110px; padding-left:115px; position:relative; background-color: #475993; border-radius: 2px;">
+               <i class="fa fa-facebook-square color-text-white fa-2x" style="position:absolute; left: 15px; top:5px;"></i>
+               <p class="display-inlineBlock">Continue with Facebook</p>
+             </a>
+
+             <br>  
+             <br>  
+
+            <a onclick="continue_signup();" href="" class="padding-top-12 padding-bottom-12 color-text-white font-weight-600 font-px-15" style="padding-right:110px; padding-left:135px; position:relative; border:1px solid #e4e4e4; border-radius: 2px;">
+               <img src="images/icons/google1.png" style="width:24px; height:24px; position:absolute; left: 15px; top:8px;" alt="">
+               <p class="display-inlineBlock color-text-black">Continue with Google</p>
+            </a>
+        
+         </div>
+         
+         
+          <div id="div_signup_continue" class="col-xs-12 col-md-12 padding-0 hidden margin-bottom-30">
+          
+            <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-400-px" style="border:1px solid #e9e9e9;" placeholder="First Name">
+
+            <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-400-px" style="border:1px solid #e9e9e9;" placeholder="Last Name">
+
+            <input type="submit" class="form-control bg-blue color-text-white font-weight-600 font-px-16 height-40-px padding-top-7 border-none width-400-px" value="Sign Up">     
+            
+            <p onclick="backto_signup();" class="font-weight-600 color-gray margin-top-40 font-em-11" style="cursor:pointer;">Back</p>
+          
+         </div>
+         
+
+        
+         <p class="color-gray font-em-09" style="line-height:20px;">By continuing, you agree to Pointter's <br/>
+         <span class="color-darkgray">Terms of Service, Privacy Policy</span>
+         </p>
+     
+     </div>
+     
+     
+     <div class="col-xs-12 col-md-12 padding-0 color-bg-white padding-top-15 padding-bottom-15" style="border-top: 1px solid #e9e9e9;">
+       
+      <p style="cursor:pointer;" data-toggle="modal" data-target="#modal_signin" data-dismiss="modal" class="color-gray margin-top-5">Already a member? <span class="color-blue">Sign In</span></p>
+       
+     </div>
+  
+    </div>
+    
+
+  </div>
+</div>  
+ 
+ 
+ 
+ <!-------------------------------------------------------------------------------------------------------------------------->
+  
+  
+   
+ <div id="modal_forgotpassword" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content text-center padding-0 width-400-px margin-left-right-auto color-bg-white">
+    
+     <div class="col-xs-12 col-md-12 padding-50 padding-bottom-30 color-bg-white">
+     
+         <img src="images/logo.png" alt="">
+
+         <h3 class="font-weight-600 margin-bottom-20">Reset Password</h3>
+         
+         <p class="font-em-09 margin-bottom-20">Please enter you email address and we'll <br/> send you a link to reset your password.</p>
+
+         <input type="text" class="font-weight-600 form-control color-darkgray margin-bottom-10 height-40-px boxshadow-none width-100-p margin-bottom-20" style="border:1px solid #e9e9e9;" placeholder="Enter email address">
+
+         <input type="submit" class="form-control bg-blue color-text-white font-weight-600 font-px-16 height-40-px padding-top-7 border-none width-100-p" value="Submit">
+     
+     </div>
+     
+     
+     <div class="col-xs-12 col-md-12 padding-0 color-bg-white padding-top-15 padding-bottom-15" style="border-top: 1px solid #e9e9e9;">
+       
+      <p style="cursor:pointer;" data-toggle="modal" data-target="#modal_signin" data-dismiss="modal" class="color-gray margin-top-5">Back to <span class="color-blue">Sign In</span></p>
+       
+     </div>
+  
+    </div>
+    
+
+  </div>
+</div>  
+  
+
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+  
+  
+   
+<div class="header">
+
+<nav id="navbar1" class="navbar navbar-default bg-transparent border-none padding-left-15 margin-bottom-0" role="navigation">
+  
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a id="navbar1_brand" onclick="btn_menu_f(this)" class="navbar-brand padding-top-10" href="#">
+      <img src="images/logo2.png" style="width:123px; max-height:40px;" alt="">
+    </a>
+  </div>
+
+    <form class="navbar-form navbar-left" role="search">
+     
+      <div class="form-group margin-right-20 dropdown">
+        <span style="position:relative;">
+          
+                <img src="images/icons/icon_menuSearch.png" class="" alt="" style="position:absolute; top:2px; left:16px; z-index:999;">
+                <input onkeyup="typing();" onclick="display_suggestion();" id="top_menu_searchbox" type="text" class="dropdown-toggle form-control bg-silver padding-left-40 height-40-px margin-bottom-0" placeholder="Search services" style="width:514px; box-shadow:none; border:1px solid #e4e4e4; border-bottom:0px; border-top:0px;">
+
+                <span id="icon_cross" onclick="close_searchSuggestionsTyping();" style="position:absolute; right: 190px; top: 0px; width:15px; height:15px;" class="hidden">
+                   <img src="images/icons/close_small.png" alt="" style="position:absolute; right: 0px; top: 2px;">
+                </span>
+               
+                <span onclick="display_suggestion_2();" id="top_menu_searchbox" class="color-gray" style="position:absolute; right: 60px; top: 0px;">
+                |       
+                <img src="images/icons/icon_menuLocation.png" class="padding-left-40 padding-right-5" style="margin-top:-2px;" alt="" >
+                Location
+                </span>  
+                
+        </span>
+        
+        
+        <div id="search_suggestions" class="hidden dropdown-content div-white-box-shadow color-bg-white padding-15 padding-left-40" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:514px; z-index:999; border-top-right-radius:0px; border-top-left-radius:0px; border-top:0px; margin-top:-2px;">
+            <ul class="padding-0">
+                <li class="padding-top-3 padding-bottom-3 color-gray font-weight-600">Popular Categories</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Photographer</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Entertainer</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Wedding Planner</li>
+                <li class="padding-top-3 padding-bottom-3 font-em-09 color-blue">See all</li>
+            </ul>
+            
+             <ul class="padding-0 margin-top-10">
+                <li class="padding-top-3 padding-bottom-3 color-gray font-weight-600">Recent Searches</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Dog Walker</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">DJ Artist</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">House Painters</li>
+                <li class="padding-top-3 padding-bottom-3 font-em-09 color-blue">See all</li>
+            </ul>
+            
+        </div>
+        
+        
+          <div id="search_suggestions_typing" class="hidden dropdown-content div-white-box-shadow color-bg-white padding-15 padding-left-40" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:514px; z-index:999; border-top-right-radius:0px; border-top-left-radius:0px; border-top:0px; margin-top:-2px;">
+           <ul class="padding-0">
+                <li class="padding-top-3 padding-bottom-3 color-gray font-weight-600">Suggestions</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Dog Walk</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Dog Care</li>
+                <li class="padding-top-3 padding-bottom-3 color-darkgray">Dog Cares</li>
+                <li class="padding-top-3 padding-bottom-3 font-em-09 color-blue">See all</li>
+            </ul>
+        </div>
+        
+          <div id="search_suggestions_2" class="hidden dropdown-content-2 div-white-box-shadow color-bg-white padding-15 padding-left-25" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:180px; z-index:999; border-top-right-radius:0px; border-top-left-radius:0px; border-top:0px; margin-top:-2px; position:absolute; right: 0px; top: 41px;">
+          
+           <ul class="padding-0">
+                <li class="text-left padding-top-3 padding-bottom-3 color-blue font-weight-600 font-px-12">
+                <img src="images/icons/location_icon.png" style="margin-top:-2px" alt="">
+                Current Location
+                </li>
+                <li class="text-left padding-top-3 padding-bottom-3 margin-top-5 color-gray font-em-09">Chicago, IL</li>
+                <li class="text-left padding-top-3 padding-bottom-3 margin-top-5 color-gray font-em-09">Chicagoland, IL</li>
+                <li class="text-left padding-top-3 padding-bottom-3 margin-top-5 color-gray font-em-09">Chicago Union Station</li>
+            </ul>
+          
+          </div>
+        
+      </div>
+  
+    </form>
+  
+  <div class="collapse navbar-collapse padding-top-8" id="bs-example-navbar-collapse-1">
+
+      <li id="li_explore" onclick="btn_menu_f(this);" class="display-inlineBlock padding-top-12">
+         <a data-toggle="modal" data-target="#" class="btn_menu margin-top-40">Explore</a>
+      </li>
+      
+      <div class="navbar-right margin-right-15">
+       
+      <ul id="before_signin" class="nav navbar-nav margin-right-20">
+        <li><a data-toggle="modal" data-target="#modal_signup" class="color-gray font-weight-600 font-em-11 padding-top-10">Sign Up</a></li>
+        <li><a data-toggle="modal" data-target="#modal_signin" class="color-gray font-weight-600 font-em-11 padding-top-10">Sign In</a></li>
+      </ul>
+      
+      <ul id="after_signin" class="nav navbar-nav margin-right-20 hidden">
+        
+        <li id="li_updates" onclick="btn_menu_f(this);">
+           <a data-toggle="modal" data-target="#" class="btn_menu margin-top-8">Updates</a>
+           <span class="badge theme_badge margin-top-3">2</span>
+        </li>
+        
+        
+        <li id="li_msg_notf" class="dropdown">
+          <a class="dropdown-toggle color-gray font-weight-600 font-em-11 padding-top-10" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="color-gray font-weight-600 font-em-11 padding-top-5">
+             <img src="images/icons/envelope.png" alt="">
+             <span class="badge theme_badge margin-top-2">3</span>
+           </a>
+             
+             
+<div id="menu_notification_conversation" class="dropdown-menu div-white-box-shadow color-bg-white padding-0" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:400px;">
+    
+    <div class="col-xs-12 col-md-12 padding-0 padding-top-15">   
+       
+      <div class="col-xs-12 col-md-12 padding-0" style="border-bottom:1px solid #e4e4e4;">
+          
+           <div id="menu_messages" onclick="btn_menu_f(this)" class="col-xs-6 col-md-6" style="border-right:1px solid #e4e4e4; border-bottom: 3px solid #00B4F1;">
+               <p class="color-darkgray text-center">Messages (3)</p>
+           </div>
+
+           <div id="menu_notifications" onclick="btn_menu_f(this)" class="col-xs-6 col-md-6" style="border-bottom: 3px solid transparent;">
+               <p class="color-darkgray text-center">Notifications (6)</p>
+           </div>
+          
+      </div>
+       
+    
+      <div class="content_area" class="col-xs-12 col-md-12 padding-0">
+          
+                 <div id="menu_messages" class="col-xs-12 col-md-12 padding-0">
+           
+           <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+               <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+                   
+                   <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                       <img src="images/icons/online1.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                       <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                   </div>
+
+                   <div class="col-md-8 col-xs-8 padding-0">
+                       <p class="color-blue font-weight-600 margin-bottom-0">Peter Holms (2)</p>
+                       <p class="color-text-black margin-bottom-0 font-em-09">Recent message</p>
+                   </div>
+
+                   <div class="col-md-2 col-xs-2 padding-0">
+                       <p class="color-gray pull-right font-em-09">Sep 25</p>
+                   </div>
+                   
+               </div>
+               
+           </div>
+ 
+             
+           <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+               <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+                   
+                   <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                       <img src="images/icons/online1.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                       <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                   </div>
+
+                   <div class="col-md-8 col-xs-8 padding-0">
+                       <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                       <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                   </div>
+
+                   <div class="col-md-2 col-xs-2 padding-0">
+                       <p class="color-gray pull-right font-em-09">Sep 25</p>
+                   </div>
+                   
+               </div>
+               
+           </div>
+           
+           
+       
+                      <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+                       <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+
+                           <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                               <img src="images/icons/offline.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                               <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                           </div>
+
+                           <div class="col-md-8 col-xs-8 padding-0">
+                               <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                               <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                           </div>
+
+                           <div class="col-md-2 col-xs-2 padding-0">
+                               <p class="color-gray pull-right font-em-09">Sep 25</p>
+                           </div>
+
+                       </div>
+
+                   </div>
+                   
+                   
+                    <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+                       <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+
+                           <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                               <img src="images/icons/offline.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                               <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                           </div>
+
+                           <div class="col-md-8 col-xs-8 padding-0">
+                               <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                               <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                           </div>
+
+                           <div class="col-md-2 col-xs-2 padding-0">
+                               <p class="color-gray pull-right font-em-09">Sep 25</p>
+                           </div>
+
+                       </div>
+
+                   </div>
+                   
+                   
+                    <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+                       <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+
+                           <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                               <img src="images/icons/offline.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                               <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                           </div>
+
+                           <div class="col-md-8 col-xs-8 padding-0">
+                               <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                               <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                           </div>
+
+                           <div class="col-md-2 col-xs-2 padding-0">
+                               <p class="color-gray pull-right font-em-09">Sep 25</p>
+                           </div>
+
+                       </div>
+
+                   </div>
+                     
+                     
+                      <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+                       <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+
+                           <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                               <img src="images/icons/offline.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                               <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                           </div>
+
+                           <div class="col-md-8 col-xs-8 padding-0">
+                               <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                               <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                           </div>
+
+                           <div class="col-md-2 col-xs-2 padding-0">
+                               <p class="color-gray pull-right font-em-09">Sep 25</p>
+                           </div>
+
+                       </div>
+
+                   </div>
+                     
+                     
+                      <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+                       <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+
+                           <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                               <img src="images/icons/offline.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                               <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                           </div>
+
+                           <div class="col-md-8 col-xs-8 padding-0">
+                               <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                               <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                           </div>
+
+                           <div class="col-md-2 col-xs-2 padding-0">
+                               <p class="color-gray pull-right font-em-09">Sep 25</p>
+                           </div>
+
+                       </div>
+
+                   </div>
+                   
+                   
+                    <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12">
+               
+                       <div class="col-xs-12 col-md-12 padding-15 padding-left-0 padding-right-0" style="border-bottom:1px solid #e4e4e4;">
+
+                           <div class="col-md-2 col-xs-2 padding-0 padding-top-3 text-left">
+                               <img src="images/icons/offline.png" class="border-radius-50-p margin-right-5" width="10px" height="10px" alt="">
+                               <img src="images/myprofile.png" width="32px" height="32px" class="border-radius-50p" alt="">
+                           </div>
+
+                           <div class="col-md-8 col-xs-8 padding-0">
+                               <p class="color-darkgray margin-bottom-0">Peter Holms</p>
+                               <p class="color-gray margin-bottom-0 font-em-09">Recent message</p>
+                           </div>
+
+                           <div class="col-md-2 col-xs-2 padding-0">
+                               <p class="color-gray pull-right font-em-09">Sep 25</p>
+                           </div>
+
+                       </div>
+
+                   </div>
+           
+           
+        <div id="li_openChat" onclick="btn_menu_f(this)" class="col-xs-12 col-md-12 padding-top-15 padding-bottom-15"> 
+    
+          <p class="color-darkgray font-em-09 margin-0">View in message center</p>
+    
+       </div>
+        
+           
+       </div>
+          
+      </div>  
+       
+        
+    </div>
+    
+    
+</div>
+   
+
+ 
+        </li>
+         
+        <li >
+          <a  data-toggle="modal" data-target="#modal_addService" class="color-gray font-weight-600 font-em-11 padding-top-5">
+            <img src="images/icons/Symbol1.png" width="32px" height="32px" style="border-radius:50%;" alt="">
+            <!-- <span class="badge theme_badge">6</span>-->
+          </a>
+        </li>
+        
+         <li class="dropdown">
+          <a class="dropdown-toggle padding-0 padding-top-5 padding-left-10" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="color-gray font-weight-600 font-em-11 padding-top-5">
+            <img src="images/icons/Symbol3.png" alt="">
+             <span class="badge theme_badge margin-top-3" style="right:-5px">4</span>
+           </a>
+             
+             
+<div id="profile_menu_div" class="dropdown-menu div-white-box-shadow color-bg-white padding-0" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:500px;">
+    
+    <div class="col-xs-12 col-md-12 padding-20 padding-top-15 padding-bottom-15">   
+       
+        <div id="li_myprofile" onclick="btn_menu_f(this);" class="col-xs-6 col-md-5 padding-0">
+            
+            <div class="col-md-3 col-xs-4 padding-0">
+               <img src="images/icons/post_profile.png" class="border-radius-50-p" width="44px" height="44px" alt="">
+            </div>
+            
+            <div class="col-md-9 col-xs-8 margin-top-2 padding-left-10 cursor-pointer">
+              <p class="color-text-black font-weight-300 font-px-14 display-inlineBlock margin-bottom-0 margin-right-5 cursor-pointer">Peter Holms</p>
+              <p class="color-gray font-weight-300 font-px-12 display-inlineBlock margin-bottom-0 margin-top-0 cursor-pointer">View Profile</p>
+            </div>
+            
+        </div>
+        
+        <div class="col-xs-6 col-md-7 padding-0">
+            
+            <input id="menu_logout" onclick="btn_menu_f(this);" type="submit" class="text-right pull-right form-control color-blue font-weight-600 font-px-14 height-40-px padding-top-10 border-none boxshadow-none" value="Logout">
+            
+        </div>
+        
+    </div>
+    
+    
+    <div class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4;"> 
+   
+         <div class="col-xs-12 col-md-12 padding-0">
+             
+            <div class="col-xs-12 col-md-6 padding-left-30 padding-top-20" style="border-right:1px solid #e4e4e4;">
+                
+                  <p class="color-darkgray font-px-14 text-uppercase">Buy</p>
+             
+                  <ul class="padding-0">
+
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="orders.html">Orders (10 Active)</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="custom_offers.html">Custom Offers</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="live_offer_requested.html">Live Offer Request</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="watching_likes.html">Watching</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Likes</a></li>
+
+                  </ul>
+                 
+            </div>
+             
+            
+            <div id="profileMenu_userSetting" class="col-xs-12 col-md-6 padding-left-30 padding-top-20"> 
+             
+                <p class="color-darkgray font-px-14 text-uppercase">Users setiings</p>
+
+                 <ul class="padding-0">
+
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Edit Profile</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Edit User Settings</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Notification Settings</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Payment Methods</a></li>
+
+                 </ul>
+             
+             </div>
+             
+             
+         </div>
+    
+        
+        
+         <div class="col-xs-12 col-md-12 padding-0">
+                        
+            <div class="col-xs-12 col-md-6 padding-left-30 padding-top-20" style="border-right:1px solid #e4e4e4;">
+                
+                <p class="color-darkgray font-px-14 text-uppercase">Sell</p>
+             
+                 <ul class="padding-0 margin-bottom-25">
+
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Orders (10 Active)</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Become a Seller </a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="offers_sent.html">Offers Sent</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="job_opportunity.html">Job Opportunities</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Premium Membership</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="background_check.html">Background check</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Business Verification</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Edit Store Locations</a></li>
+
+                 </ul>
+                 
+            </div>
+             
+            
+            <div id="profileMenu_general" class="col-xs-12 col-md-6 padding-left-30 padding-top-20"> 
+             
+                <p class="color-darkgray font-px-14 text-uppercase">General</p>
+             
+                 <ul class="padding-0 margin-bottom-25">
+
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="following.html">Following</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="followers.html">Followers</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="invite_friends.html">Invite Friends</a></li>
+                     <li class="padding-top-3 padding-bottom-3"><a class="color-gray" href="">Logout</a></li>
+
+                 </ul>
+             
+             </div>
+             
+         </div>
+    
+    </div>
+    
+    
+    <div class="col-xs-12 col-md-12 padding-top-15 padding-bottom-15"> 
+    
+       <p class="color-mediumgray font-em-09 margin-0">About. Get the app . Contact . Privacy Policy . Terms of Conditions</p>
+    
+    </div>
+    
+</div>
+   
+
+ 
+        </li>
+        
+      </ul>
+    
+       <input type="submit" class="btn btn-default color-text-white bg-blue font-weight-600 padding-left-30 padding-right-30 margin-top-5" style="border-radius:20px; border-color:#00B4F1;" value="Start Selling">
+     
+      </div>
+    
+  </div>
+</nav>
+
+</div>    
+  
+  
+<!-------------------------------------------------------------------------------------------------------------------------->
+ 
+
+<nav id="navbar2" class="navbar navbar-default margin-bottom-0 border-none color-bg-white">
+  <div class="col-xs-12 col-md-12 padding-right-0 div-white-box-shadow-7" style="border-bottom: 1px solid #E4E4E4; z-index:999;">
+   <div class="col-md-11 col-xs-12 col-md-offset-1 padding-left-40 padding-right-0">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="navbar2_brand" class="navbar-brand text-uppercase padding-top-20" style="font-size: 12px; color: #c0c0c0 !important;" href="#">Categories</a>
+    </div>
+    
+     
+    <div class="collapse navbar-collapse" id="collapse2">
+      <ul class="nav navbar-nav">
+        <li><a style="padding-bottom:0px !important;" href="">all</a></li>
+        <li><a style="padding-bottom:0px !important;" href="">home</a></li>
+        <li><a style="padding-bottom:0px !important;" href="">living</a></li>
+        <li><a style="padding-bottom:0px !important;" href="">auto</a></li>
+        <li><a style="padding-bottom:0px !important;" href="">business</a></li>
+        <li><a style="padding-bottom:0px !important;" href="">event</a></li>
+        <li><a style="padding-bottom:0px !important;" href="">carpenter</a></li>
+      </ul>
+    </div>
+    
+    
+  </div>
+ </div>
+</nav>
+   
+   
+   <!------------------------------------------------------------------------------------------------------------------------------------->
+   
+   
+   
+   
+   <div id="index_main" class="col-xs-12 col-md-12 padding-0 padding-bottom-60" style="background-color:rgb(249,249,249)">
+      
+       
+<!---------------------------------------------------------------------------------------------------------------------------------->
+               
+       <div id="index_sidepanel" class="col-md-3 col-sm-5 col-xs-12 padding-left-60 margin-top-30">
+                                    
+                                            
+            <div class="col-xs-12 col-md-12 padding-0 color-bg-white padding-top-30 padding-bottom-60" style="border-radius:4px;">
+               
+               <div class="col-xs-12 col-md-12 padding-0">
+                  
+                   <h4 class="color-darkgray text-left padding-bottom-15 padding-left-25">Buy</h4>
+                   
+                    <div class="col-xs-12 col-md-12 padding-0">
+                         <ul class="padding-0 padding-bottom-15 margin-0">
+                              <li class="padding-10 padding-left-25">
+                                  <a href="orders.html" class="color-darkgray">Orders (5)</a>
+                              </li>
+                              <li class="padding-10 padding-left-25">
+                                  <a href="custom_offers.html" class="color-darkgray">Custom offers (2)</a>
+                              </li>
+                              <li class="padding-10 padding-left-25">
+                                  <a href="live_offer_requested.html" class="color-darkgray">Live Offer Requested (2)</a>
+                              </li>
+                              <li class="padding-10 padding-left-25">
+                                  <a href="watching_likes.html" class="color-darkgray">Watching</a>
+                              </li>
+                              <li class="padding-10 padding-left-25">
+                                  <a href="" class="color-darkgray">Likes</a>
+                              </li>
+                           </ul>
+                    </div>
+                   
+                   <div class="clearfix"></div>
+                   
+                   <div class="col-xs-12 col-md-12 padding-20">
+                       <h4 class="color-darkgray text-left padding-top-40 padding-left-5 margin-0" style="border-top:1px solid #e4e4e4;">Sell</h4>
+                   </div>
+                   
+                   <ul class="padding-0 padding-top-5">
+                     
+                      <li class="padding-10 padding-left-25">
+                          <a href="" class="color-darkgray">Orders</a>
+                      </li>
+                      
+                      <li class="padding-10 padding-left-25">
+                          <a href="become_seller.html" class="color-darkgray">Become a Seller</a>
+                      </li>
+                      
+                       <li class="padding-10 padding-left-25 bg-lightgray">
+                          <a href="offers_sent.html" class="color-text-black">Offers Sent</a>
+                      </li>
+                      
+                      <li class="padding-10 padding-left-25">
+                          <a href="job_opportunity.html" class="color-darkgray">Job Opportuniy</a>
+                      </li>
+                      
+                      <li class="padding-10 padding-left-25">
+                          <a href="" class="color-darkgray">Premium Membership</a>
+                      </li>
+                      
+                      <li class="padding-10 padding-left-25">
+                          <a href="background_check.html" class="color-darkgray">Background Check</a>
+                      </li>
+                      
+                      <li class="padding-10 padding-left-25">
+                          <a href="" class="color-darkgray">Edit Store Locations</a>
+                      </li>
+                      
+                   </ul>
+                  
+               </div>
+            
+            </div>    
+          
+             
+       </div> <!-- index_sidepanel-->
+       
+ <!------------------------------------------------------------------------------------------------------------------------------------->
+
+           
+       
+       
+       <div id="index_contentarea" class="col-md-9 col-sm-7 col-xs-12 margin-top-30 padding-bottom-200">
+                 
+            <div id="buy_sell" class="col-xs-12 col-md-7 padding-0">
+               
+            
+                            <div class="col-md-12 col-sm-12 sub_div col-xs-12 div-white-box-shadow margin-bottom-30 padding-0" style="border-bottom:2px solid #e4e4e4 !important;">
+                  
+                                 <div class="col-md-12 col-xs-12 padding-30 padding-bottom-15" style="position:relative; border-bottom:1px solid #e4e4e4;">
+
+                                      <div class="col-md-3 col-xs-3 sub_div_image">
+                                         <img src="images/offersent1.png" alt="" width="110px" height="110px">
+                                      </div>
+
+                                      <div class="col-md-9 col-xs-9 padding-right-0">
+                                          <h4 class="margin-top-0 color-text-black font-weight-600">Dog Walking Service</h4>
+                                          <p class="font-em-09 color-mediumgray margin-bottom-5">
+                                              I will walk dog
+                                          </p>
+                                          <p class="font-em-09 margin-bottom-5">
+                                              $50
+                                              <span class="color-blue" style="text-decoration: line-through;">$100</span> 
+                                              for 1 hour
+                                          </p>
+                                          <p class="font-em-09 color-mediumgray margin-bottom-5">
+                                              Offer sent on 11/12/2017, 05:17 AM
+                                          </p>
+                                      </div>
+                                      
+                                      
+                                  </div>
+                                   
+                                       
+
+                                  <div class="col-xs-12 col-md-12 sub_div_description padding-15 padding-left-30 cursor-pointer" style="background-color:#F6F7F9;" data-toggle="modal" data-target="#modal_sendOfferToRequest">
+                                                                      
+                                     <div class="sub_div_footer col-md-4 col-sm-4 col-xs-5 padding-0">
+                                          <ul class="margin-0 padding-0">
+                                              <li class="display-inlineBlock">
+                                                  <img src="images/customoffer_profile1.png" width="32px" height="32px" class="border-radius-50p margin-right-5" alt="" style="vertical-align: text-bottom;">
+                                              </li>
+                                              <li class="display-inlineBlock">
+                                                  <p class="color-darkgray margin-0">By Peter Holms</p>
+                                                  <p class="color-gray font-em-09 margin-0">Buyer</p>
+                                              </li>
+                                          </ul>
+                                     </div>
+                                    
+                                    <div class="col-md-8 col-sm-8 col-xs-7 padding-top-10">
+                                      <ul class="padding-0 margin-0 pull-right">
+                                          <li class="display-inlineBlock margin-right-15">
+                                              <img src="images/icons/icon_phone.png" alt="">
+                                          </li>
+                                          <li class="display-inlineBlock">
+                                              <img src="images/icons/icon_email.png" alt="">
+                                          </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+
+                            </div>
+                            
+                            
+                            
+                            <div class="col-md-12 col-sm-12 sub_div col-xs-12 div-white-box-shadow margin-bottom-30 padding-0" style="border-bottom:2px solid #e4e4e4 !important;">
+                  
+                                 <div class="col-md-12 col-xs-12 padding-30 padding-bottom-15" style="position:relative; border-bottom:1px solid #e4e4e4;">
+
+                                      <div class="col-md-3 col-xs-3 sub_div_image">
+                                         <img src="images/offersent2.png" alt="" width="110px" height="110px">
+                                      </div>
+
+                                      <div class="col-md-9 col-xs-9 padding-right-0">
+                                          <h4 class="margin-top-0 color-text-black font-weight-600">Dog Walking Service</h4>
+                                          <p class="font-em-09 color-mediumgray margin-bottom-5">
+                                              I will walk dog
+                                          </p>
+                                          <p class="font-em-09 margin-bottom-5">
+                                              $50
+                                              <span class="color-blue" style="text-decoration: line-through;">$100</span> 
+                                              for 1 hour
+                                          </p>
+                                          <p class="font-em-09 color-mediumgray margin-bottom-5">
+                                              Offer sent on 11/12/2017, 05:17 AM
+                                          </p>
+                                      </div>
+                                      
+                                  </div>
+                                   
+                                       
+
+                                  <div class="col-xs-12 col-md-12 sub_div_description padding-15 padding-left-30 cursor-pointer" style="background-color:#F6F7F9;" data-toggle="modal" data-target="#modal_sendOfferToRequest">
+                                                                      
+                                     <div class="sub_div_footer col-md-4 col-sm-4 col-xs-5 padding-0">
+                                          <ul class="margin-0 padding-0">
+                                              <li class="display-inlineBlock">
+                                                  <img src="images/customoffer_profile2.png" width="32px" height="32px" class="border-radius-50p margin-right-5" alt="" style="vertical-align: text-bottom;">
+                                              </li>
+                                              <li class="display-inlineBlock">
+                                                  <p class="color-darkgray margin-0">By Peter Holms</p>
+                                                  <p class="color-gray font-em-09 margin-0">Buyer</p>
+                                              </li>
+                                          </ul>
+                                     </div>
+                                    
+                                    <div class="col-md-8 col-sm-8 col-xs-7 padding-top-10">
+                                      <ul class="padding-0 margin-0 pull-right">
+                                          <li class="display-inlineBlock margin-right-15">
+                                              <img src="images/icons/icon_phone.png" alt="">
+                                          </li>
+                                          <li class="display-inlineBlock">
+                                              <img src="images/icons/icon_email.png" alt="">
+                                          </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                            <div class="col-md-12 col-sm-12 sub_div col-xs-12 div-white-box-shadow margin-bottom-30 padding-0" style="border-bottom:2px solid #e4e4e4 !important;">
+                  
+                                 <div class="col-md-12 col-xs-12 padding-30 padding-bottom-15" style="position:relative; border-bottom:1px solid #e4e4e4;">
+
+                                      <div class="col-md-3 col-xs-3 sub_div_image">
+                                         <img src="images/offersent3.png" alt="" width="110px" height="110px">
+                                      </div>
+
+                                      <div class="col-md-9 col-xs-9 padding-right-0">
+                                          <h4 class="margin-top-0 color-text-black font-weight-600">Dog Walking Service</h4>
+                                          <p class="font-em-09 color-mediumgray margin-bottom-5">
+                                              I will walk dog
+                                          </p>
+                                          <p class="font-em-09 margin-bottom-5">
+                                              $50
+                                              <span class="color-blue" style="text-decoration: line-through;">$100</span> 
+                                              for 1 hour
+                                          </p>
+                                          <p class="font-em-09 color-mediumgray margin-bottom-5">
+                                              Offer sent on 11/12/2017, 05:17 AM
+                                          </p>
+                                      </div>
+                                      
+                                  </div>
+                                   
+                                       
+
+                                  <div class="col-xs-12 col-md-12 sub_div_description padding-15 padding-left-30 cursor-pointer" style="background-color:#F6F7F9;" data-toggle="modal" data-target="#modal_sendOfferToRequest">
+                                                                      
+                                     <div class="sub_div_footer col-md-4 col-sm-4 col-xs-5 padding-0">
+                                          <ul class="margin-0 padding-0">
+                                              <li class="display-inlineBlock">
+                                                  <img src="images/customoffer_profile3.png" width="32px" height="32px" class="border-radius-50p margin-right-5" alt="" style="vertical-align: text-bottom;">
+                                              </li>
+                                              <li class="display-inlineBlock">
+                                                  <p class="color-darkgray margin-0">By Peter Holms</p>
+                                                  <p class="color-gray font-em-09 margin-0">Buyer</p>
+                                              </li>
+                                          </ul>
+                                     </div>
+                                    
+                                    <div class="col-md-8 col-sm-8 col-xs-7 padding-top-10">
+                                      <ul class="padding-0 margin-0 pull-right">
+                                          <li class="display-inlineBlock margin-right-15">
+                                              <img src="images/icons/icon_phone.png" alt="">
+                                          </li>
+                                          <li class="display-inlineBlock">
+                                              <img src="images/icons/icon_email.png" alt="">
+                                          </li>
+                                      </ul>
+                                    </div>
+
+                                  </div>
+
+                            </div>
+                            
+                            
+           </div>
+                  
+       </div>
+       
+   </div>
+   
+   
+   
+<!-------------------------------------------------------------------------------------------------------------------------->
+
+
+   
+   
+   <script src="libraries/jquery/jquery-3.2.0.min.js"></script>
+   <script src="libraries/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+   <script src="libraries/jquery-labelauty-master/source/jquery-labelauty.js"></script>
+   
+   <script>      
+        
+       
+       
+        window.onresize = function resize_sidebar()
+        {
+        
+         var page_width = $("#index_main").outerWidth();
+          
+         if(page_width <= 1200)
+         {
+             $('#index_sidepanel').removeClass('col-md-3');
+             $('#index_contentarea').removeClass('col-md-9');
+            
+             $('#index_sidepanel').addClass('col-md-4');
+             $('#index_contentarea').addClass('col-md-8');
+         }
+           
+         else
+         {
+             $('#index_sidepanel').removeClass('col-md-4');
+             $('#index_contentarea').removeClass('col-md-8');
+            
+             $('#index_sidepanel').addClass('col-md-3');
+             $('#index_contentarea').addClass('col-md-9');
+         }
+           
+        }
+       
+   
+   </script>
+   
+   
+   <script>
+  
+  
+  window.onload = function onLoadFunction()
+  {
+     
+  }
+ 
+  function continue_signup()
+  {
+    $("#div_signup_1").addClass("hidden");
+    $("#div_signup_continue").removeClass("hidden");
+  }
+  
+  function backto_signup()
+  {
+    $("#div_signup_1").removeClass("hidden");
+    $("#div_signup_continue").addClass("hidden");
+  }
+  
+   
+  function btn_menu_f(abc)
+  {
+       
+       var btn_id = $(abc).attr("id"); 
+       $("#menu_notification_conversation").removeClass('show'); 
+    
+    
+       if(btn_id == "sub_services" || btn_id == "li_explore" || btn_id == "navbar1_brand" || btn_id == "menu_logout")
+       {
+         $("#li_explore a").addClass("btn_menu_active");
+         window.location.href = "index2.html";  
+       }
+      
+       else if(btn_id == "sub_liveoffers")
+       {
+         $("#li_explore a").addClass("btn_menu_active");
+         $("#index_contentarea").load("includes/liveoffers.html");
+         $("#index_sidepanel").load("includes/upcomingServices_dashboard.html");  
+       }
+      
+       else if(btn_id == "sub_jobs")
+       {
+         $("#li_explore a").addClass("btn_menu_active");
+         $("#index_contentarea").load("includes/jobs.html");
+         $("#index_sidepanel").load("includes/upcomingServices_dashboard.html");  
+       }
+    
+       else if(btn_id == "li_updates")
+       {
+         $("#index_main").html("");
+         $("#li_explore a").removeClass("btn_menu_active");
+         $("#li_updates a").addClass("btn_menu_active");
+         window.location.href = "updates.html";
+       }
+    
+       else if(btn_id == "li_myprofile")
+       {
+         $("#index_main").html("");
+         $("#li_explore a").addClass("btn_menu_active");
+         $("#li_updates a").removeClass("btn_menu_active");
+         window.location.href = "myprofile.html";
+       }
+    
+       else if(btn_id == "service_detail_link")
+       {
+         window.location.href = "service_detail.html";
+       }
+    
+       else if(btn_id == "li_cancel")
+       {
+         $("#modal_addService").modal('toggle');
+       }
+    
+       else if(btn_id == "li_editprofile")
+       {
+         window.location.href = "edit_profile.html";
+       }
+    
+       else if(btn_id == "li_openChat")
+       {
+         window.location.href = "chat.html";
+       }
+    
+       else if(btn_id == "li_addService")
+       {
+         $("#addService_pricing").addClass("hidden");
+         $("#addService_pricing_done").removeClass("hidden");
+       }
+    
+       else if(btn_id == "li_editService")
+       {
+         $("#addService_pricing_done").addClass("hidden");
+         $("#addService_pricing").removeClass("hidden");
+       }
+    
+       else if(btn_id == "menu_messages")
+       {
+          $("#menu_notification_conversation .content_area").html("");
+          $("#menu_notification_conversation .content_area").load('includes/menu_messages.html');
+          
+          $("#menu_notifications").css("border-bottom-color","transparent");
+          $("#menu_messages").css("border-bottom-color","#00B4F1");
+         
+          $("#menu_notification_conversation").addClass('show');
+         
+       }
+    
+       else if(btn_id == "menu_notifications")
+       {
+          $("#menu_notification_conversation .content_area").html("");
+          $("#menu_notification_conversation .content_area").load('includes/menu_notification.html');
+          
+          $("#menu_notifications").css("border-bottom-color","#00B4F1");
+          $("#menu_messages").css("border-bottom-color","transparent");
+         
+          $("#menu_notification_conversation").addClass('show');
+         
+       }
+
+  
+       ////////////////////////////////////////////////////////////////
+    
+    
+        if(btn_id == "menu_logout")
+        {
+           topmenu_signedout();
+        }
+    
+  }
+       
+  
+  function topmenu_signedin()
+  {
+      $("#before_signin").addClass("hidden");
+      $("#after_signin").removeClass("hidden");
+      $("#modal_signin").modal('toggle');
+  }
+  
+  function topmenu_signedout()
+  {
+      $("#after_signin").addClass("hidden");
+      $("#before_signin").removeClass("hidden");
+  }
+  
+  
+  function open_userprofile()
+  {
+       window.location.href = "user_profile.html";
+  }
+       
+    function display_suggestion() 
+    {
+        $("#search_suggestions_2").toggle(false);
+        $("#search_suggestions_typing").toggle(false);
+        $("#search_suggestions").toggle(true);
+               
+        $("#search_suggestions").removeClass("hidden");
+        $("#search_suggestions_2").removeClass("hidden");
+        $("#search_suggestions_typing").removeClass("hidden");
+    }
+       
+    function display_suggestion_2() 
+    {
+        $("#search_suggestions").toggle(false);
+        $("#search_suggestions_typing").toggle(false);
+        $("#search_suggestions_2").toggle(true);
+        
+        $("#search_suggestions").removeClass("hidden");
+        $("#search_suggestions_2").removeClass("hidden");
+        $("#search_suggestions_typing").removeClass("hidden");
+    }
+       
+    function display_suggestion_2_jobs() 
+    {
+        $("#search_suggestions").toggle(false);
+        $("#search_suggestions_typing").toggle(false);
+        $("#search_suggestions_2_jobs").toggle(true);
+        $("#search_suggestions_2_jobs").removeClass("hidden");
+    }
+    
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+       
+      if (!event.target.matches('#top_menu_searchbox') && !event.target.matches('#search_suggestions')) 
+      {   
+          $("#search_suggestions").toggle(false);
+          $("#search_suggestions_2").toggle(false);
+          $("#search_suggestions_typing").toggle(false);
+          $("#icon_cross").addClass("hidden");
+      }
+        
+     
+      if (!event.target.matches('#jobs_searchbox')) 
+      {   
+          $("#search_suggestions_jobs").toggle(false);
+          $("#icon_cross_jobs").addClass("hidden");
+      }
+      
+      
+      if (!event.target.matches('#location_jobs'))
+      {
+          $("#search_suggestions_2_jobs").addClass("hidden");
+      }
+    
+    }       
+        
+    function typing()
+    {
+        $("#search_suggestions_2").toggle(false);
+        $("#search_suggestions").toggle(false);
+        $("#search_suggestions_typing").toggle(true);              
+        $("#search_suggestions").removeClass("hidden");
+        $("#search_suggestions").removeClass("hidden");
+    }
+        
+    function typing_jobs()
+    {      
+        $("#search_suggestions_jobs").toggle(true);
+        $("#search_suggestions_jobs").removeClass("hidden");
+        $("#icon_cross_jobs").removeClass("hidden");        
+    }
+       
+    function close_searchSuggestionsTyping()
+    {
+        $("#search_suggestions_typing").toggle(false);
+        $("#icon_cross").addClass("hidden");
+    }
+       
+     function close_searchSuggestionsTyping_jobs()
+    {
+        $("#search_suggestions_typing_jobs").toggle(false);
+        $("#icon_cross_jobs").addClass("hidden");
+    }
+  
+
+  $(document).ready(function(){
+	$(":checkbox").labelauty(
+    {
+        label: false
+    }
+    
+    );
+  });
+
+</script>
+   
+    
+</body>
+</html>

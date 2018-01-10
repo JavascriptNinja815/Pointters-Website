@@ -1,0 +1,549 @@
+ <ul id="submenu-ul" class="margin-bottom-15 padding-0 padding-left-15">
+   
+    <li id="sub_services" class="btn_submenu_li" style="margin-left:0px !important;" onclick="btn_menu_f(this);">
+       <a href="#" class="btn_submenu">Services</a>
+    </li>
+    
+    <li id="sub_liveoffers" class="btn_submenu_li" onclick="btn_menu_f(this);">
+       <a href="#" class="btn_submenu btn_submenu_clicked">Live offers</a>
+    </li>
+    
+    <li id="sub_jobs" class="btn_submenu_li" onclick="btn_menu_f(this);">
+       <a href="#" class="btn_submenu">Jobs</a>
+    </li>
+</ul>
+          
+          
+
+<div class="liveoffers col-xs-12 col-md-12 padding-0" id="content_area">
+
+    <div class="col-md-8 col-xs-12">
+       
+       <div class="col-xs-12 col-md-12 padding-0">
+           
+        <div id="status_update" class="col-xs-12 col-md-12 div-white-box-shadow-6 dropdown-toggle" style="border:1px solid #e4e4e4; border-top:0px; position:relative;" data-toggle="dropdown">
+    
+         <div class="col-xs-12 col-md-12 padding-0">
+               <div class="col-xs-8 col-md-8">
+                 <p class="color-gray margin-bottom-0 margin-top-5">What do you need done ?</p>
+              </div>        
+              <div class="col-xs-4 col-md-4">
+                 <ul class="padding-0 margin-0 pull-right">
+                    <li><img src="images/icons/icon_camera2.png" alt=""></li>
+                    <li><img src="images/icons/icon_location2.png" alt=""></li>
+                    <li><img src="images/icons/icon_clock2.png" alt=""></li>
+                    <li><img src="images/icons/icon_dollar2.png" alt=""></li>
+                 </ul>
+              </div>
+         </div>
+          
+       </div>
+                 
+       <div id="new_offer" class="dropdown-menu color-bg-white col-xs-12 col-md-12 padding-0 div-white-box-shadow-6" style="border:1px solid #e4e4e4; border-top:2px solid #e4e4e4; z-index:1; position:absolute; top:58px; left:0px; border-top-right-radius: 0px;
+    border-top-left-radius: 0px;">
+           
+           <div class="col-xs-12 col-md-12">
+               <ul class="padding-0 margin-0 margin-top-15 margin-bottom-15 padding-left-20">
+                   <li><a href="">Request Again</a></li>
+                   <li><a href="">Need dog walk</a></li>
+                   <li><a href="">Need home service</a></li>
+                   <li><a href="">Need hair cutting</a></li>
+               </ul>
+           </div>
+           
+          <div class="col-xs-12 col-md-12 padding-20 padding-top-0" style="relative;">
+           
+               <img src="images/icons/slide_previous.png" style="position:absolute; top:50%; left:20px; z-index:1;" alt="">
+               <img src="images/icons/slide_next.png" style="position:absolute; top:50%; right:20px; z-index:1;" alt="">
+              
+               <div class="col-md-4 col-xs-4 padding-15 color-bg-white" style="height:160px; display:flex;">
+                 <div class="col-xs-12 col-md-12 padding-0" style="background-color:#F0F0F3; display:flex; justify-content:center; align-content:center; align-items:center; height:160px;">
+                    <img src="images/icons/path.png" alt="">
+                    <img src="images/icons/icon_close.png" style="position:absolute; top:8px; right:8px; z-index:1;" alt="">
+                 </div>
+               </div>
+
+                <div class="col-md-4 col-xs-4 padding-15 color-bg-white" style="height:160px; display:flex;">
+                 <div class="col-xs-12 col-md-12 padding-0" style="background-color:#F0F0F3; display:flex; justify-content:center; align-content:center; align-items:center; height:160px;">
+                    <img src="images/icons/path.png" alt="">
+                    <img src="images/icons/icon_close.png" style="position:absolute; top:8px; right:8px; z-index:1;" alt="">
+                 </div>
+               </div>
+
+                <div class="col-md-4 col-xs-4 padding-15 color-bg-white" style="height:160px; display:flex;">
+                 <div class="col-xs-12 col-md-12 padding-0" style="background-color:#F0F0F3; display:flex; justify-content:center; align-content:center; align-items:center; height:160px;">
+                    <img src="images/icons/path.png" alt="">
+                    <img src="images/icons/icon_close.png" style="position:absolute; top:8px; right:8px; z-index:1;" alt="">
+                 </div>
+               </div>
+           
+         </div>
+          
+         <div class="col-xs-12 col-md-12 padding-0 margin-top-20">
+            <div class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4;">
+               
+                <div class="col-xs-4 col-md-4 bg-F0F0F3 padding-top-10 padding-bottom-10">
+                    <p class="color-gray font-weight-600 margin-0">Schedule</p>
+                </div>
+                
+                <div class="col-xs-4 col-md-4 padding-0" style="border-right:1px solid #e4e4e4;">
+                    <input type="date" class="form-control height-40-px border-0 boxshadow-none">
+                </div>
+                
+                <div class="col-xs-4 col-md-4 padding-top-5">                   
+                    <input type="text" class="form-control dropdown-toggle border-none boxshadow-none" data-toggle="dropdown" value="08:00am - 10:00pm">               
+                    <div class="dropdown-menu padding-10 padding-bottom-20">
+                        <p class="color-text-black margin-0">
+                            <span>08:00am</span>
+                            <span> - </span>
+                            <span>10:00pm</span>
+                        </p>                   
+                        <h5 class="color-text-black font-weight-600">From - To</h5>                   
+                        <div class="col-xs-12 col-md-12 padding-0">
+                            <input id="time_from" type="text" class="form-control width-45-p display-inlineBlock margin-right-10" value="08:00am">
+                            <input id="time_to" type="text" class="form-control width-45-p display-inlineBlock" value="10:00pm">
+                        </div>                      
+                    </div>                 
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4;">
+                <div class="col-xs-4 col-md-4 bg-F0F0F3 padding-top-10 padding-bottom-10">
+                    <p class="color-gray font-weight-600 margin-0">Price Range</p>
+                </div>
+                <div class="col-xs-4 col-md-4 padding-0" style="border-right:1px solid #e4e4e4;">
+                    <div class="col-xs-4 col-md-4">
+                        <p class="color-gray margin-0 margin-top-10" style="vertical-align:middle;">From</p>
+                    </div>
+                    <div class="col-xs-8 col-md-8 padding-0">
+                        <input type="text" class="form-control border-none boxshadow-none height-40-px color-text-black" value="$10.00">
+                    </div>
+                </div>
+                <div class="col-xs-4 col-md-4 padding-0">
+                   <div class="col-xs-4 col-md-4">
+                        <p class="color-gray margin-0 margin-top-10">To</p>
+                    </div>
+                    <div class="col-xs-8 col-md-8 padding-0">
+                        <input type="text" class="form-control border-none boxshadow-none height-40-px color-text-black" value="$10.00">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="div_location" class="col-xs-12 col-md-12 padding-0" style="border-top:1px solid #e4e4e4; border-bottom:1px solid #e4e4e4;">
+                <div class="col-xs-4 col-md-4 bg-F0F0F3 padding-top-10 padding-bottom-10">
+                    <p class="color-gray font-weight-600 margin-0">Location</p>
+                </div>
+                <div class="col-xs-8 col-md-8 padding-0">
+                    <input onkeypress="return display_locationSuggestions();" type="text" class="form-control border-none boxshadow-none height-40-px" placeholder="Type Location">
+                    
+                    <div id="search_locationSuggestions" class="hidden dropdown-content-2 div-white-box-shadow color-bg-white padding-15 padding-left-25" style="position:absolute; border:1px solid #e4e4e4; border-radius:5px; width:100%; z-index:999; border-top-right-radius:0px; border-top-left-radius:0px; border-top:0px; margin-top:-2px; position:absolute; right: 0px; top: 41px;">
+                       <ul class="padding-0">
+                            <li class="text-left padding-top-3 padding-bottom-3 color-blue font-weight-600 font-px-12">
+                            <img src="images/icons/location_icon.png" style="margin-top:-2px" alt="">
+                            Current Location
+                            </li>
+                            <li class="text-left padding-top-3 padding-bottom-3 margin-top-5 color-gray font-em-09">Chicago, IL</li>
+                            <li class="text-left padding-top-3 padding-bottom-3 margin-top-5 color-gray font-em-09">Chicagoland, IL</li>
+                            <li class="text-left padding-top-3 padding-bottom-3 margin-top-5 color-gray font-em-09">Chicago Union Station</li>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+         </div>
+          
+         <div class="col-xs-12 col-md-12 padding-top-20 padding-bottom-20">             
+            <li id="li_addService" onclick="" class="display-inlineBlock pull-right">
+                <a class="text-uppercase margin-top-40 bg-blue 
+                 font-px-14 font-weight-600 padding-6 padding-left-20 padding-right-20 color-text-white" style="border-radius:15px; color:#fff !important;">Request</a>
+            </li>
+
+            <li onclick="btn_menu_f(this);" id="li_cancel" class="display-inlineBlock pull-right margin-right-20">
+                <a class="margin-top-40 font-px-14 font-weight-600 color-darkgray text-uppercase">Cancel</a>
+            </li>
+         </div>
+           
+       </div>
+       
+      
+      <div class="col-xs-12 col-md-12 margin-top-20 padding-0">
+         <h4 class="font-weight-600">Suggested Services</h4>
+      </div>
+      
+      
+      <div class="col-xs-12 col-md-12 padding-0 margin-top-20">
+       
+         <img src="images/icons/slide_previous.png" style="position:absolute; top:40%; left:25px; z-index:1;" alt="">
+         <img src="images/icons/slide_next.png" style="position:absolute; top:40%; right:25px; z-index:1;" alt="">
+        
+        <div class="col-xs-1 col-md-1">
+            
+        </div>
+        
+         <div class="col-xs-10 col-md-10 padding-0">
+            
+            <div id="liveoffers_slides" class="col-xs-12 col-md-12 padding-0">
+         
+                <div class="col-md-6 col-sm-6 col-xs-12 margin-bottom-40 sub_div_wrapper">
+                  
+                  <div class="col-md-12 col-xs-12 padding-0 sub_div div-white-box-shadow-7">
+                   
+                   <div class="col-md-12 col-xs-12 sub_div_image" style="background-image: url(images/liveoffers_slide1.png); height:167px;"></div>
+                   
+                   <div class="col-md-12 col-xs-12 padding-top-10">
+                       <h5>Dog Walking  for hourly rate</h5>
+                       <p class="font-em-09 margin-bottom-5">
+                           $50
+                           <span class="color-blue" style="text-decoration: line-through;">$100</span> 
+                           for 1 hour
+                       </p>
+                       <p class="font-em-09 color-mediumgray">
+                           <span class="glyphicon glyphicon-map-marker"></span>
+                           San Jose, CA, 22 km
+                       </p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-md-12 sub_div_description">
+                      
+                       <div class="col-md-4 col-xs-4 padding-0 text-left">                   
+                           <img src="images/p.png" alt="">
+                           <p class="display-inlineBlock color-mediumgray" style="font-size:12px;">234</p>                   
+                       </div>
+                       
+                       <div class="col-md-4 col-xs-4 padding-0 text-center">
+                           <img src="images/icons/brief2.png" style="vertical-align:text-bottom;" alt="">
+                           <p class="display-inlineBlock color-mediumgray" style="font-size:12px;">23</p>
+                       </div>
+                       
+                       <div class="col-md-4 col-xs-4 padding-0 text-right">
+                           <i class="fa fa-star color-mediumgray"></i>
+                           <p class="display-inlineBlock color-mediumgray" style="font-size:12px;">96%</p>
+                       </div>
+                       
+                   </div>
+                   
+                   <div id="service_detail_link" onclick="btn_menu_f(this)" class="cursor-pointer col-xs-12 col-md-12 padding-top-6 sub_div_footer" style="border-top:1px solid #e9e9e9;">
+                   
+                     <img src="images/services/1.png" alt="img" style="border-radius:50%; width:24px; height:24px; margin-right:2px;">
+                     <p class="display-inlineBlock color-mediumgray font-em-09">Daisy Williams</p>
+                     <p class="display-inlineBlock p2 color-blue font-weight-600 pull-right margin-top-4" style="font-size:12px;">Promoted</p>
+                   
+                   </div>
+                   
+                   </div>
+                   
+               </div>
+               
+               
+               
+               <div class="col-md-6 col-sm-6 col-xs-12 margin-bottom-40 sub_div_wrapper">
+                  
+                  <div class="col-md-12 col-xs-12 padding-0 sub_div div-white-box-shadow-7">
+                   
+                   <div class="col-md-12 col-xs-12 sub_div_image" style="background-image: url(images/liveoffers_slide2.png); height:167px;"></div>
+                   
+                   <div class="col-md-12 col-xs-12 padding-top-10">
+                       <h5>Dog Walking  for hourly rate</h5>
+                       <p class="font-em-09 margin-bottom-5">
+                           $50
+                           <span class="color-blue" style="text-decoration: line-through;">$100</span> 
+                           for 1 hour
+                       </p>
+                       <p class="font-em-09 color-mediumgray">
+                           <span class="glyphicon glyphicon-map-marker"></span>
+                           San Jose, CA, 22 km
+                       </p>
+                   </div>
+                   
+                   <div class="col-xs-12 col-md-12 sub_div_description">
+                      
+                       <div class="col-md-4 col-xs-4 padding-0 text-left">                   
+                           <img src="images/p.png" alt="">
+                           <p class="display-inlineBlock color-mediumgray" style="font-size:12px;">234</p>                   
+                       </div>
+                       
+                       <div class="col-md-4 col-xs-4 padding-0 text-center">
+                           <img src="images/icons/brief2.png" style="vertical-align:text-bottom;" alt="">
+                            <p class="display-inlineBlock color-mediumgray" style="font-size:12px;">23</p>
+                       </div>
+                       
+                       <div class="col-md-4 col-xs-4 padding-0 text-right">
+                           <i class="fa fa-star color-mediumgray"></i>
+                           <p class="display-inlineBlock color-mediumgray" style="font-size:12px;">96%</p>
+                       </div>
+                       
+                   </div>
+                   
+                   <div id="service_detail_link" onclick="btn_menu_f(this)" class="cursor-pointer col-xs-12 col-md-12 padding-top-6 sub_div_footer" style="border-top:1px solid #e9e9e9;">
+                   
+                     <img src="images/services/1.png" alt="img" style="border-radius:50%; width:24px; height:24px; margin-right:2px;">
+                     <p class="display-inlineBlock color-mediumgray font-em-09">Daisy Williams</p>
+                     <p class="display-inlineBlock p2 color-blue font-weight-600 pull-right margin-top-4" style="font-size:12px;">Promoted</p>
+                   
+                   </div>
+                   
+                   </div>
+                   
+               </div>
+               
+               
+         
+             </div>
+            
+         </div>
+         
+         <div class="col-xs-1 col-md-1"></div>
+       
+      </div>
+           
+       </div>
+       
+       
+       <div class="col-xs-12 col-md-12 padding-0">
+           
+          <div class="col-xs-12 col-md-12 margin-top-20 padding-0">
+             <div class="col-xs-9 col-md-9 padding-0">
+                 <h4 class="font-weight-600">Incoming Offers</h4>
+             </div>
+              <div class="col-xs-3 col-md-3 padding-0 dropdown">
+                    <img class="pull-right dropdown-toggle" src="images/icons/icon_filter.png" alt="" data-toggle="dropdown">
+                    <div class="dropdown-menu dropdown_filter">
+                      <ul class="padding-0 margin-0">
+                          <li><a href=""></a></li>
+                          <li><a href="">Sort by price</a></li>
+                          <li><a href="">Sort by distance</a></li>
+                          <li><a href="">Sort by new</a></li>
+                          <li><a href=""></a></li>
+                      </ul>
+                    </div>
+               </div>
+          </div>
+          
+          <div class="col-xs-12 col-md-12 padding-0">
+              
+              <div class="col-xs-12 col-md-12 padding-15 color-bg-white div-white-box-shadow-7" style="border-radius:5px;">
+                  <div class="col-xs-7 col-md-7 padding-0">         
+                       <div class="display-inlineBlock width-15-px height-15-px bg-blue border-radius-50p padding-top-1 margin-right-5">
+                          <p class="color-text-white font-em-08 text-center">1</p>
+                       </div>
+                       <div style="position:relative;" class="display-inlineBlock text-center margin-right-10">     
+                            <img src="images/liveoffers_profileimage.png" alt="" style="margin-left:auto; margin-right:auto;" width="44px" height="44px">
+                            <img src="images/icons/online@2x.png" style="position:absolute; bottom:-6px; right:38%;" width="12px" height="12px" alt="">
+                      </div>
+                      <div class="display-inlineBlock" style="vertical-align:middle;">
+                           <span>
+                               <p class="color-darkgray font-em-09 margin-0">Emilia Handerson</p>
+                               <p class="color-mediumgray font-em-08 margin-0">Walk dogs, Dog care </p>
+                           </span>
+                      </div>  
+                  </div>
+                  <div class="col-xs-5 col-md-5 padding-left-0">               
+                    <div class="display-inlineBock pull-right margin-top-10">
+                        <span class="margin-right-25">
+                            <img src="images/icons/icon_clock.png" width="14px" height="14px" alt="">
+                            <p class="text-uppercase color-gray font-em-08 display-inlineBlock">Now</p>
+                        </span>      
+                        <span>
+                             <p class="text-uppercase color-blue font-px-14 font-weight-600 display-inlineBlock margin-right-10">$10</p>
+                             <i class="fa fa-angle-right color-gray font-px-18"></i>
+                        </span>
+                    </div>
+                  </div>
+              </div>
+              
+              
+              <div class="col-xs-12 col-md-12 padding-15 color-bg-white margin-top-15 div-white-box-shadow-7" style="border-radius:5px;">
+                  <div class="col-xs-7 col-md-7 padding-0">         
+                       <div class="display-inlineBlock width-15-px height-15-px bg-blue border-radius-50p padding-top-1 margin-right-5">
+                          <p class="color-text-white font-em-08 text-center">1</p>
+                       </div>
+                       <div style="position:relative;" class="display-inlineBlock text-center margin-right-10">     
+                            <img src="images/liveoffers_profileimage.png" alt="" style="margin-left:auto; margin-right:auto;" width="44px" height="44px">
+                            <img src="images/icons/online@2x.png" style="position:absolute; bottom:-6px; right:38%;" width="12px" height="12px" alt="">
+                      </div>
+                      <div class="display-inlineBlock" style="vertical-align:middle;">
+                           <span>
+                               <p class="color-darkgray font-em-09 margin-0">Emilia Handerson</p>
+                               <p class="color-mediumgray font-em-08 margin-0">Walk dogs, Dog care </p>
+                           </span>
+                      </div>  
+                  </div>
+                  <div class="col-xs-5 col-md-5 padding-left-0">               
+                    <div class="display-inlineBock pull-right margin-top-10">
+                        <span class="margin-right-25">
+                            <img src="images/icons/icon_clock.png" width="14px" height="14px" alt="">
+                            <p class="text-uppercase color-gray font-em-08 display-inlineBlock">Now</p>
+                        </span>      
+                        <span>
+                             <p class="text-uppercase color-blue font-px-14 font-weight-600 display-inlineBlock margin-right-10">$10</p>
+                             <i class="fa fa-angle-right color-gray font-px-18"></i>
+                        </span>
+                    </div>
+                  </div>
+              </div>
+              
+              
+              <div class="col-xs-12 col-md-12 padding-15 color-bg-white margin-top-15 div-white-box-shadow-7" style="border-radius:5px;">
+                  <div class="col-xs-7 col-md-7 padding-0">         
+                       <div class="display-inlineBlock width-15-px height-15-px bg-blue border-radius-50p padding-top-1 margin-right-5">
+                          <p class="color-text-white font-em-08 text-center">1</p>
+                       </div>
+                       <div style="position:relative;" class="display-inlineBlock text-center margin-right-10">     
+                            <img src="images/liveoffers_profileimage.png" alt="" style="margin-left:auto; margin-right:auto;" width="44px" height="44px">
+                            <img src="images/icons/online@2x.png" style="position:absolute; bottom:-6px; right:38%;" width="12px" height="12px" alt="">
+                      </div>
+                      <div class="display-inlineBlock" style="vertical-align:middle;">
+                           <span>
+                               <p class="color-darkgray font-em-09 margin-0">Emilia Handerson</p>
+                               <p class="color-mediumgray font-em-08 margin-0">Walk dogs, Dog care </p>
+                           </span>
+                      </div>  
+                  </div>
+                  <div class="col-xs-5 col-md-5 padding-left-0">               
+                    <div class="display-inlineBock pull-right margin-top-10">
+                        <span class="margin-right-25">
+                            <img src="images/icons/icon_clock.png" width="14px" height="14px" alt="">
+                            <p class="text-uppercase color-gray font-em-08 display-inlineBlock">Now</p>
+                        </span>      
+                        <span>
+                             <p class="text-uppercase color-blue font-px-14 font-weight-600 display-inlineBlock margin-right-10">$10</p>
+                             <i class="fa fa-angle-right color-gray font-px-18"></i>
+                        </span>
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+           
+       </div>
+       
+       
+       <div class="col-xs-12 col-md-12 padding-0 margin-top-30">
+           
+           <div class="col-xs-12 col-md-12 padding-0">
+               <div class="col-xs-9 col-md-9 padding-0"></div>
+               <div class="col-xs-3 col-md-3 padding-0 dropdown">
+                    <img class="pull-right dropdown-toggle" src="images/icons/icon_filter.png" alt="" data-toggle="dropdown">
+                    <div class="dropdown-menu dropdown_filter">
+                      <ul class="padding-0 margin-0">
+                          <li><a href=""></a></li>
+                          <li><a href="">Sort by price</a></li>
+                          <li><a href="">Sort by distance</a></li>
+                          <li><a href="">Sort by new</a></li>
+                          <li><a href=""></a></li>
+                      </ul>
+                    </div>
+               </div>
+           </div>
+           
+            <div class="col-xs-12 col-md-12 padding-0 margin-top-20">
+              
+              <div class="col-xs-6 col-md-6 padding-left-0">
+                  <div class="col-xs-12 col-md-12 padding-15 color-bg-white" style="border-bottom:1px solid #e4e4e4; border-radius:5px; position:relative !important;">                 
+                      <div class="col-xs-3 col-md-3 padding-0">
+                          <div style="position:relative;" class="display-inlineBlock text-center margin-right-10">     
+                                <img src="images/liveoffers_profileimage.png" alt="" style="margin-left:auto; margin-right:auto;" width="44px" height="44px">
+                                <img src="images/icons/online@2x.png" style="position:absolute; bottom:-6px; right:38%;" width="12px" height="12px" alt="">
+                          </div>
+                      </div>
+                      <div class="col-xs-8 col-md-8 padding-0">
+                          <div class="col-xs-12 col-md-12 padding-0">
+                              <span>
+                                   <p class="color-darkgray font-em-09 margin-0">Emilia Handerson</p>
+                                   <p class="color-mediumgray font-em-08 margin-0">Walk dogs, Dog care </p>
+                               </span>
+                          </div> 
+                           <div class="col-xs-12 col-md-12 padding-0">
+                               <span>
+                                 <img src="images/icons/icon_clock.png" width="14px" height="14px" alt="">
+                                 <p class="text-uppercase color-gray font-em-08 display-inlineBlock">Now</p>
+                               </span> 
+                          </div>
+                      </div>
+                      <p class="text-uppercase color-blue font-px-14 font-weight-600 display-inlineBlock margin-right-10" style="position:absolute; top:10px; right:2px;">$10</p>
+                      <i class="fa fa-angle-right color-gray font-px-18" style="position:absolute; bottom:10px; right:12px;"></i>
+                  </div>
+                 
+              </div>
+              
+               <div class="col-xs-6 col-md-6 padding-right-0">
+                  <div class="col-xs-12 col-md-12 padding-15 color-bg-white" style="border-bottom:1px solid #e4e4e4; border-radius:5px; position:relative !important;">         
+                      <div class="col-xs-3 col-md-3 padding-0">
+                          <div style="position:relative;" class="display-inlineBlock text-center margin-right-10">     
+                                <img src="images/liveoffers_profileimage.png" alt="" style="margin-left:auto; margin-right:auto;" width="44px" height="44px">
+                                <img src="images/icons/online@2x.png" style="position:absolute; bottom:-6px; right:38%;" width="12px" height="12px" alt="">
+                          </div>
+                      </div>
+                      <div class="col-xs-8 col-md-8 padding-0">
+                          <div class="col-xs-12 col-md-12 padding-0">
+                              <span>
+                                   <p class="color-darkgray font-em-09 margin-0">Emilia Handerson</p>
+                                   <p class="color-mediumgray font-em-08 margin-0">Walk dogs, Dog care </p>
+                               </span>
+                          </div> 
+                           <div class="col-xs-12 col-md-12 padding-0">
+                               <span>
+                                 <img src="images/icons/icon_clock.png" width="14px" height="14px" alt="">
+                                 <p class="text-uppercase color-gray font-em-08 display-inlineBlock">Now</p>
+                               </span> 
+                          </div>
+                      </div>
+                      <p class="text-uppercase color-blue font-px-14 font-weight-600 display-inlineBlock margin-right-10" style="position:absolute; top:10px; right:2px;">$10</p>
+                      <i class="fa fa-angle-right color-gray font-px-18" style="position:absolute; bottom:10px; right:12px;"></i>
+                  </div>
+                 
+              </div>
+              
+           </div>
+           
+       </div>
+      
+       
+    </div>
+    
+    <div class="col-md-4 col-xs-12">
+       
+       <div class="col-xs-12 col-md-12 padding-0 padding-right-45">
+           <div class="col-xs-12 col-md-12 color-bg-white padding-15 div-white-box-shadow-6" style="border-radius:5px; border:1px solid #eaeaea;">
+               <div class="col-xs-12 col-md-12 padding-0 padding-bottom-10">
+               <h4 class="display-inlineBlock font-weight-600 margin-0">Request</h4>
+               <i class="fa fa-angle-right color-mediumgray font-weight-600 pull-right" style="font-size:18px"></i>
+           </div>
+           <div class="col-xs-12 col-md-12 padding-top-20 padding-0" style="border-top:1px solid #e4e4e4;">
+               <div class="col-xs-9 col-md-9 padding-left-0">
+                   <p class="font-em-09">Looking for Dog Walk</p>
+                   <p class="font-px-12 margin-bottom-5">$10 - $30</p>
+                   <p class="font-px-12 margin-bottom-5">On 11/17, 8PM - 9PM</p>
+                   <p class="font-px-12 margin-bottom-5">
+                   <img src="images/icons/icon_location.png" class="width-15-px height-15-px" alt="">
+                   San Jose, CA, 22 km
+                   </p>
+               </div>
+               <div class="col-xs-3 col-md-3 padding-0">
+                   <img src="images/profile3.png" class="border-radius-50p pull-right" alt="">
+               </div>
+               
+               <div class="col-xs-12 col-md-12 padding-0 margin-top-20">
+                   <div class="col-xs-6 col-md-6 padding-0">
+                       <p class="font-em-09 color-darkgray pull-left margin-0">
+                          3 Photos attached
+                       </p>
+                   </div>
+                   <div class="col-xs-6 col-md-6 padding-0">
+                       <p class="font-em-09 color-blue pull-right margin-0">
+                          Expires On 11/19
+                       </p>
+                   </div>
+               </div>         
+           </div>
+           </div>
+       </div>
+       
+       
+       <div class="col-xs-12 col-md-12 padding-0 margin-top-20">
+           <img src="images/liveoffers_map.png" alt="">
+       </div>
+       
+    </div>
+
+</div>
+           
